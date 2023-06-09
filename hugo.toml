@@ -1,0 +1,82 @@
+baseURL = 'https://blog.konomama.dev'
+languageCode = 'en-us'
+title = 'このままでいいから'
+theme = 'm10c'
+paginate = 8
+
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "/posts"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "/about"
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags"
+  weight = 3
+
+[params]
+  author = "-"
+  description = "哀しみとよろこびくり返して"
+  menu_item_separator = " - "
+ 
+ [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/gohugoio"
+ [[params.social]]
+    icon = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/gohugoio"
+
+[params.isso]
+  enabled = true
+  data = "https://comments.blog.konomama.dev/"
+  id = "thread-id"
+  css = true
+  lang = "en"
+  avatar = true
+  avatar-bg = "#f0f0f0"
+  jsLocation = "https://comments.blog.konomama.dev/js/embed.min.js"
+
+[params.style]
+#  darkestColor = "#d35050"
+#  darkColor = "#212121"
+#  lightColor = "#f5e3e0"
+#  lightestColor = "#f5f5f5"
+#  primaryColor = "#ffffff"
+
+#   darkestColor = "#777777"
+#   darkColor = "#ffffff"
+#   lightColor = "#888888"
+#   lightestColor = "#777777"
+#   primaryColor = "#57cc8a"
+
+#  darkestColor = "#d35050"
+#  darkColor = "#212121"
+#  lightColor = "#f5e3e0"
+#  lightestColor = "#f5f5f5"
+#  primaryColor = "#ffffff"
+
+[caches]
+  [caches.assets]
+    dir = ':resourceDir/_gen'
+    maxAge = 0
+  [caches.getcsv]
+    dir = ':cacheDir/:project'
+    maxAge = 0
+  [caches.getjson]
+    dir = ':cacheDir/:project'
+    maxAge = 0
+  [caches.getresource]
+    dir = ':cacheDir/:project'
+    maxAge = 0
+  [caches.images]
+    dir = ':resourceDir/_gen'
+    maxAge = 0
+  [caches.modules]
+    dir = ':cacheDir/modules'
+    maxAge = 0
