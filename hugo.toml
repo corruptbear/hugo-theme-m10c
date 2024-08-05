@@ -1,8 +1,7 @@
-baseURL = 'https://blog.konomama.dev'
-languageCode = 'en-us'
-title = 'このままでいいから'
-theme = 'm10c'
-paginate = 8
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
 
 [[menu.main]]
   name = "Blog"
@@ -17,37 +16,37 @@ paginate = 8
   name = "Tags"
   url = "/tags"
   weight = 3
+[[menu.main]]
+  name = "🔖"
+  weight = 5
+  url = "/bookmarks"
 
 [params]
-  author = "-"
-  description = "哀しみとよろこびくり返して"
+  description = """
+  a blog
+"""
+  tagline = """
+  本站由本人控制  
+  不受审查限制  
+  部分内容墙内需VPN  
+  """
   menu_item_separator = " - "
  
  [[params.social]]
-    icon = "github"
-    name = "Github"
-    url = "https://github.com/gohugoio"
+    icon = "bilibili"
+    name = "Bilibili"
+    url = "https://space.bilibili.com/1497254925/"
  [[params.social]]
-    icon = "twitter"
-    name = "Twitter"
-    url = "https://twitter.com/gohugoio"
-
-[params.isso]
-  enabled = true
-  data = "https://comments.blog.konomama.dev/"
-  id = "thread-id"
-  css = true
-  lang = "en"
-  avatar = true
-  avatar-bg = "#f0f0f0"
-  jsLocation = "https://comments.blog.konomama.dev/js/embed.min.js"
+    icon = "lastfm"
+    name = "Lastfm"
+    url = "https://www.last.fm/user/iloveWinnie"
 
 [params.style]
-#  darkestColor = "#d35050"
-#  darkColor = "#212121"
-#  lightColor = "#f5e3e0"
-#  lightestColor = "#f5f5f5"
-#  primaryColor = "#ffffff"
+  darkestColor = "#242930"
+  darkColor = "#353b43"
+  lightColor = "#afbac4"#text
+  lightestColor = "#eeeeee"#title
+  primaryColor = "#fc7777"#link color
 
 #   darkestColor = "#777777"
 #   darkColor = "#ffffff"
