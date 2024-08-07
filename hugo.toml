@@ -17,6 +17,10 @@
   url = "/tags"
   weight = 3
 [[menu.main]]
+  name = "🎹"
+  url = "/music"
+  weight = 4
+[[menu.main]]
   name = "🔖"
   weight = 5
   url = "/bookmarks"
@@ -31,11 +35,7 @@
   部分内容墙内需VPN  
   """
   menu_item_separator = " - "
- 
- [[params.social]]
-    icon = "bilibili"
-    name = "Bilibili"
-    url = "https://space.bilibili.com/1497254925/"
+
  [[params.social]]
     icon = "lastfm"
     name = "Lastfm"
