@@ -4,10 +4,6 @@
     min = "0.55.0"
 
 [[menu.main]]
-  name = "Blog"
-  weight = 1
-  url  = "/posts"
-[[menu.main]]
   name = "About"
   weight = 2
   url = "/about"
@@ -33,6 +29,8 @@
   本站由本人控制  
   不受审查限制  
   部分内容墙内需VPN  
+  有什么感想或需要的请留言  
+  (联系信息只需填一次)
   """
   menu_item_separator = " - "
 
