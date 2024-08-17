@@ -5,6 +5,9 @@
     <link rel="shortcut icon" href="{{ .Site.Params.favicon | default "/favicon.ico" }}" />
     <meta charset="utf-8" />
     {{ hugo.Generator }}
+    {{ if .Params.noindex }}
+    <meta name="robots" content="noindex, nofollow" /> 
+    {{ end }}
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="{{ .Site.Params.author | default "John Doe" }}" />
     <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
