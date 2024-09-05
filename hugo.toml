@@ -4,9 +4,9 @@
     min = "0.55.0"
 
 [[menu.main]]
-  name = "About"
+  name = "Misc"
   weight = 2
-  url = "/about"
+  url = "/misc"
 [[menu.main]]
   identifier = "tags"
   name = "Tags"
@@ -26,13 +26,13 @@
   a blog
 """
   tagline = """
-  本站不受审查限制  
-  部分内容墙内需VPN  
-  有什么感想或需要的请留言  
-  (联系信息只需填一次)  
-  搬运中
+  本blog部分外链及内嵌内容🇨🇳需vpn  
+  有任何需要欢迎留言(邮箱非必填)  
+  若订阅对话请检查垃圾邮件:  
+  mail.konomama.dev@gmail.com
   """
   menu_item_separator = " - "
+
 
  [[params.social]]
     icon = "lastfm"
